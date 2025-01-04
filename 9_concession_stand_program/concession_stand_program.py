@@ -20,7 +20,7 @@ total = 0
 # Now we have to display the menu
 print("---------- MENU ----------")
 for key, value in menu.items():
-    print(f"{key: 10}: ${value}:.2f")
+    print(f"{key:10}: ${value:.2f}")
 print("--------------------------")
 
 # And acording with the item we are going to append
@@ -37,5 +37,5 @@ print("--------------------------")
 for food in cart:
     total += menu.get(food)
     print(food, end=" ")
-print("--------------------------")
+print(" ")
 print(f"Total is: ${total:.2f}")
